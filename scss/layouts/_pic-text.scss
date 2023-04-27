@@ -32,6 +32,10 @@
                 @include mq(laptop){
                     margin-left: 4rem;
                 }
+
+                a {
+                    color: $very-dark-desaturated-blue;
+                }
             }
 
 
