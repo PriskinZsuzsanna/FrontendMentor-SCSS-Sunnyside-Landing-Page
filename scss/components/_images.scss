@@ -1,0 +1,17 @@
+@mixin set-mq-bgImage($img) {
+    background: url('../images/mobile/#{$img}') no-repeat center/cover;
+
+    @include mq(mobile) {
+        background: url('../images/mobile/#{$img}') no-repeat center/cover;
+    }
+    @include mq(tablet) {
+        background: url('../images/mobile/#{$img}') no-repeat center/cover;
+    }
+    @include mq(laptop) {
+        background: url('../images/desktop/#{$img}') no-repeat center/cover;
+    }
+    @include mq(desktop) {
+        background: url('../images/desktop/#{$img}') no-repeat center/cover;
+    }
+    
+}

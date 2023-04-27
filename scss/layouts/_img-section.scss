@@ -1,0 +1,35 @@
+.img-section {
+
+    .flex-responsive {
+        width: 100%;
+        @include flexResponsive(0, 0);
+
+        .wrapper {
+            width: 100%;
+            @include flex(row, center, center, 0, 0, 0);
+            .img-div {
+                width: calc(100% / 2);
+                height: 30vh;
+            }
+        }
+
+        .wrapper:nth-of-type(1) {
+            .img-div:nth-of-type(1){
+                @include set-mq-bgImage('image-gallery-milkbottles.jpg');
+            }
+            .img-div:nth-of-type(2){
+                @include set-mq-bgImage('image-gallery-orange.jpg');
+            }
+        }
+        .wrapper:nth-of-type(2) {
+            .img-div:nth-of-type(1){
+                @include set-mq-bgImage('image-gallery-cone.jpg');
+            }
+            .img-div:nth-of-type(2){
+                @include set-mq-bgImage('image-gallery-sugar-cubes.jpg');
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,41 @@
+.testimonials {
+    @extend %section;
+    padding-bottom: 5rem;
+
+    .section-title {
+        text-transform: uppercase;
+        font-family: $font-fraunces;
+        color: $grayish-blue;
+        letter-spacing: 3px;
+    }
+
+    .flex-responsive {
+        @include flexResponsiveBigBreakpoint(5rem, 1rem);
+        text-align: center;
+
+        .testimonial {
+            @include flex(column, flex-start, center, 1rem, 0, 0);
+
+            .sm-img-container {
+                width: 80px;
+                height: 80px;
+                border-radius: $border-radius-circle;
+                overflow: hidden;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .lead {
+                color: $dark-grayish-blue;
+                font-weight: 700;
+                line-height: 1.6;
+            }
+
+            .extra-light {
+                color: $grayish-blue;
+            }
+        }
+    }
+}

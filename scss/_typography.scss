@@ -1,0 +1,76 @@
+//font size
+$base-font-mini : .8rem;
+$base-font-mobile : 1rem;
+$base-font-tablet : 1.1rem;
+$base-font-laptop : 1.2rem;
+$base-font-desktop : 1.3rem;
+
+//font-type
+$body: 1;
+$h1: 2.7;
+$h2: 2.2;
+$h3: 1.8;
+$h4: 1.2;
+$p: 1;
+$p-lead: 1.2;
+$a: .8;
+$a-big: 1;
+$i: 1;
+$i-big: 1.4;
+
+
+@mixin set-text-size($font-type) {
+    font-size: $base-font-mini * $font-type;
+
+    @include mq(mobile) {
+        font-size: $base-font-mobile * $font-type;
+    }
+    @include mq(tablet) {
+        font-size: $base-font-tablet * $font-type;
+    }
+    @include mq(laptop) {
+        font-size: $base-font-laptop * $font-type;
+    }
+    @include mq(desktop) {
+        font-size: $base-font-desktop * $font-type;
+    }
+    
+    
+}
+
+h1 {
+    @include set-text-size($h1);
+    font-family: $font-fraunces;
+    text-align: center;
+}
+h2 {
+    @include set-text-size($h2);
+    font-family: $font-fraunces;
+    text-align: center;
+}
+h3 {
+    @include set-text-size($h3);
+    font-family: $font-fraunces;
+    text-align: center;
+}
+h4 {
+    @include set-text-size($h4);
+    font-family: $font-fraunces;
+    text-align: center;
+}
+p {
+    @include set-text-size($p)
+}
+p.lead {
+    @include set-text-size($p-lead);
+    text-align: center;
+}
+a {
+    @include set-text-size($a-big);
+
+}
+
+i {
+    @include set-text-size(($i))
+}
+

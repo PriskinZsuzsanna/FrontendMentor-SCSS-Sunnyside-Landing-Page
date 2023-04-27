@@ -1,0 +1,37 @@
+%btn {
+    outline: none;
+    border: none;
+    background: none;
+    font-family: $font-fraunces;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: $transition;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left:-5%;
+        height: 7px;
+        width: 110%;
+        opacity: .3;
+        border-radius: 50px;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    /*i {
+        pointer-events: none;
+    }*/
+}
+
+@mixin btn() {
+    @extend %btn;
+}

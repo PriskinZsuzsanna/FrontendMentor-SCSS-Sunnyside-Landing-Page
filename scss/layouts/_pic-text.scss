@@ -1,0 +1,113 @@
+.pic-text {
+    
+    .flex-responsive {
+        @include flexResponsive(0, 0);
+
+        .text {
+            @extend %section-in-section;
+            padding: 3rem 0;
+            width:100%;
+
+            @include mq(laptop){
+                align-items: flex-start;
+            }
+
+            h2 {
+                padding-inline: 4rem;
+                @include mq(laptop){
+                    text-align: left;
+                }
+            }
+            
+            p {
+                color: $very-dark-grayis-blue;
+                padding-inline: 4rem;
+                @include mq(laptop){
+                    text-align: left;
+                }
+            }
+
+            button {
+                @include btn;
+                @include mq(laptop){
+                    margin-left: 4rem;
+                }
+            }
+
+
+        }
+    }
+
+    .flex-responsive:nth-of-type(1) {
+        @include flexResponsive(0, 0);
+        flex-direction: column-reverse;
+
+        .img-container-no-text {
+            min-height: 360px;
+            width: 100%;
+            @include set-mq-bgImage('image-transform.jpg');
+
+            @include mq(tablet){
+                min-height: 660px;
+            }
+        }
+
+        button::after{
+            background: $yellow;
+        }
+
+    
+    }
+    .flex-responsive:nth-of-type(2) {
+        @include flexResponsive(0, 0);
+        .img-container-no-text {
+            min-height: 360px;
+            width: 100%;
+            @include set-mq-bgImage('image-stand-out.jpg');
+
+            @include mq(tablet){
+                min-height: 660px;
+            }
+        }
+
+        button::after{
+            background: $soft-red;
+        }
+
+       
+    }
+    .flex-responsive:nth-of-type(3) {
+        @include flexResponsive(0, 0);
+        .text-on-bg {
+            min-height: 660px;
+            width: 100%;
+            position: relative;
+
+            .text-absolute {
+                @extend %section-in-section-small;
+                position: absolute;
+                top: 360px;
+                text-align: center;
+                line-height: 1.5;
+                color: $dark-desaturated-cyan;
+                font-weight: bold;
+                font-family: $font-barlow;
+
+                p {
+                    padding-inline: $inline-padding;
+                }
+            }
+        }
+
+        .text-on-bg:nth-of-type(1) {
+            @include set-mq-bgImage('image-graphic-design.jpg');
+            
+        }
+        .text-on-bg:nth-of-type(2) {
+            @include set-mq-bgImage('image-photography.jpg');
+
+        }
+        
+    }
+
+}

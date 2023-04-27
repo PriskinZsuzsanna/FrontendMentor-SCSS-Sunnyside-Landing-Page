@@ -1,0 +1,9 @@
+%section {
+    @include flex(column, center, center, 2rem, $inline-padding, $block-padding)
+}
+%section-in-section {
+    @include flex(column, center, center, 2rem, $inline-padding, $block-padding-sm)
+}
+%section-in-section-small {
+    @include flex(column, center, center, 1rem, $inline-padding, $block-padding-mini)
+}

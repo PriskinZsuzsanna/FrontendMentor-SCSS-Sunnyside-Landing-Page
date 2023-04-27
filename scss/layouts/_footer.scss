@@ -1,0 +1,42 @@
+.footer {
+    @extend %section-in-section;
+    background: lighten($dark-moderate-cyan, 30%);
+
+    .flex-column {
+        width: 100%;
+        @include flex(column, center, center, 1rem, 1rem, 1rem);
+
+
+        .logo a img{
+            fill: $dark-moderate-cyan;
+        }
+
+        ul {
+            @include flex(row, center, center, 1rem, 0, 0);
+            
+            a {
+                color: $dark-moderate-cyan;
+
+                &:hover {
+                    color: $white;
+
+                }
+            }
+        }
+
+        .social {
+            @include flex(row, center, center, 1rem, 0, 1rem);
+
+            .icon{
+                fill: $dark-moderate-cyan;
+                transition: $transition;
+
+                &:hover {
+                    fill: #fff;
+                }
+            }
+
+        }
+    }
+
+}

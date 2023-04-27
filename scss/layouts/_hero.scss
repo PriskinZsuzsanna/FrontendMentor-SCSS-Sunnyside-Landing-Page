@@ -1,0 +1,15 @@
+.hero {
+    @extend %section;
+    justify-content: flex-start;
+    min-height: 50vh;
+    @include set-mq-bgImage('image-header.jpg');
+    color: $white;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    img {
+        padding-top: 2rem;
+    }
+}

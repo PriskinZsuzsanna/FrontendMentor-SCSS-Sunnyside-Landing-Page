@@ -1,0 +1,48 @@
+//-----------colors
+
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$yellow-active: #ddfa00;
+$dark-desaturated-cyan: hsl(167, 40%, 24%); //graphic design text
+$dark-blue: hsl(198, 62%, 26%); //photography
+$dark-moderate-cyan: hsl(168, 34%, 41%); //footer
+
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayis-blue: hsl(210, 9%, 39%);
+$dark-grayish-blue: hwb(232 51% 40%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+
+//------------fonts
+$font-barlow: 'Barlow', sans-serif;
+$font-fraunces: 'Fraunces', serif;
+
+
+//------------paddings
+
+$fix-nav-padding: 80px;
+$inline-padding-sm: 3%;
+$inline-padding: 5%;
+$block-padding: calc(2rem + $fix-nav-padding) 3rem;
+$block-padding-sm: 3rem;
+$block-padding-mini: 1.5rem;
+
+$small-button-padding: 0.5rem 2rem;
+$button-padding: 1.5rem 3rem;
+$button-equal-width-inline-size: 35%;
+$button-equal-width-padding-block: 1.5rem;
+
+
+//borders-shadows
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-rounded: 50px;
+$border-radius-circle: 50%;
+
+$border-shadow-sm: 1px 1px 3px;
+$border-shadow-md: 3px 3px 7px;
+
+
+//transitions
+$transition: all .3s ease-in-out;
