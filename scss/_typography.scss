@@ -67,7 +67,7 @@ p.lead {
 }
 a {
     @include set-text-size($a-big);
-
+    color: $white;
 }
 
 i {

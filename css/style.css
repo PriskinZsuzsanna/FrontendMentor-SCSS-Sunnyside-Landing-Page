@@ -153,6 +153,7 @@ p.lead {
 
 a {
   font-size: 0.8rem;
+  color: hsl(0, 0%, 100%);
 }
 @media (min-width: 376px) {
   a {
@@ -385,13 +386,18 @@ header nav .nav-container ul {
 }
 @media (min-width: 886px) {
   header nav .nav-container ul {
+    opacity: 1;
     position: relative;
     left: 0;
+    top: 0;
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0;
+  }
+  header nav .nav-container ul a {
+    color: hsl(0, 0%, 100%);
   }
 }
 header nav .nav-container ul a {
