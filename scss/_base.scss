@@ -12,6 +12,10 @@ ul {
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     @include set-text-size($body);
