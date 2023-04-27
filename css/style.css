@@ -922,7 +922,7 @@ header.sticky {
   padding-inline: 1rem;
   padding-block: 1rem;
 }
-.footer .flex-column .logo a img {
+.footer .flex-column .icon {
   fill: hsl(168, 34%, 41%);
 }
 .footer .flex-column ul {
