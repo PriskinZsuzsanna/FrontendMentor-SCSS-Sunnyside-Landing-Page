@@ -12,8 +12,8 @@
 }
 @mixin flexResponsiveBigBreakpoint($gap, $padding) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: space-between;
     flex-direction: column;
     gap: $gap;
     padding: $padding;

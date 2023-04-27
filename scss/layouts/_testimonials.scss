@@ -15,7 +15,6 @@
 
         .testimonial {
             @include flex(column, flex-start, center, 1rem, 0, 0);
-
             .sm-img-container {
                 width: 80px;
                 height: 80px;

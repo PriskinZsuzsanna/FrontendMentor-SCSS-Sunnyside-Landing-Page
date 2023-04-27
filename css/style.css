@@ -759,8 +759,8 @@ header.sticky {
 }
 .testimonials .flex-responsive {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: space-between;
   flex-direction: column;
   gap: 5rem;
   padding: 1rem;
