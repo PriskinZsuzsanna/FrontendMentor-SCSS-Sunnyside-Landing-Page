@@ -18,6 +18,8 @@ Frontend Mentor Challange - SASS/SCSS Solution
 https://priskinzsuzsanna.github.io/FrontendMentor-SCSS-Sunnyside-Landing-Page/
 
 ### Screenshot
-![png1](https://user-images.githubusercontent.com/121173949/234988975-e10a6454-96f7-47ed-88d6-b6a319d59605.png)
-![png2](https://user-images.githubusercontent.com/121173949/234989023-3ef7ef10-2f5e-45f8-901f-a9aea0485d5f.png)
+
+![1](https://user-images.githubusercontent.com/121173949/234994980-6dd65b1d-8da0-4281-b1de-b3176f6ce404.png)
+![2](https://user-images.githubusercontent.com/121173949/234995004-13425c09-4615-4eda-9ce6-8d326740ea7a.png)
+
 
