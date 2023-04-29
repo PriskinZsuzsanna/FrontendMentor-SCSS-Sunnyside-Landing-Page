@@ -107,6 +107,23 @@ header {
                     rotate: 45deg;
                 }
 
+                @include mq(laptop) {
+                    opacity: 1;
+                    position: relative;
+                    left:0;
+                    top: 0;
+                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0;
+                    background: transparent;
+
+                    a {
+                        color: $white;
+                    }
+                }
+
             }
             ul.scroll {
                 &::before {
@@ -114,6 +131,14 @@ header {
                 }
                 &::after {
                     display: none;
+                }
+            }
+
+            ul.scroll.open {
+                background: lighten($dark-moderate-cyan, 30%);
+               
+                a {
+                    color: $white;
                 }
             }
 

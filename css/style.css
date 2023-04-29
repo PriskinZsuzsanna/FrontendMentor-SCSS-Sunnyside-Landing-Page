@@ -476,11 +476,34 @@ header nav .nav-container ul.open::after {
   z-index: 1000000;
   rotate: 45deg;
 }
+@media (min-width: 886px) {
+  header nav .nav-container ul.open {
+    opacity: 1;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    background: transparent;
+  }
+  header nav .nav-container ul.open a {
+    color: hsl(0, 0%, 100%);
+  }
+}
 header nav .nav-container ul.scroll::before {
   display: none;
 }
 header nav .nav-container ul.scroll::after {
   display: none;
+}
+header nav .nav-container ul.scroll.open {
+  background: #9ccec4;
+}
+header nav .nav-container ul.scroll.open a {
+  color: hsl(0, 0%, 100%);
 }
 header nav .nav-container .menu {
   cursor: pointer;
